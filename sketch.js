@@ -6,15 +6,14 @@ function setup(){
 	can.position(window.innerWidth/2,window.innerHeight/2);
     background(0,250,0);	
 snmove=new move(200,300,-4,3);
-//sn.position(snmove.x,snmove.y);
 tttmove=new move(100,200,2,3);
 	frameRate(20);
 	}
 
 function draw(){
-snmove.update();snmove.chbdd1();//snmove.display();
+snmove.update();snmove.chbdd1();
 sn.position(snmove.x,snmove.y);	
-tttmove.update();tttmove.chbdd1();//snmove.display();
+tttmove.update();tttmove.chbdd1();
 ttt.position(tttmove.x,tttmove.y);	
 
 }
