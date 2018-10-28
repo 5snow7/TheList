@@ -3,7 +3,7 @@ let waterR,patternG;
 
 function start(){
 par=createP("just click");
-par.position(810,30);par.class("parbdd");
+par.position(810,60);par.class("parbdd");
 
 sn=select("#snow");sn.class("bdd");	
 ttt=select("#ttt");ttt.class("bdd");

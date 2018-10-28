@@ -1,5 +1,6 @@
 let can,patternGmove;
 let snmove,tttmove,firemove,threemove,waterRmove;
+let ellColor;
 function setup(){
 	start();stuff();
 	can=createCanvas(350,300);
@@ -11,6 +12,7 @@ firemove=new move(400,200,-3,-5);
 threemove=new move(100,500,4,-3);
 waterRmove=new move(300,300,-3,-4);
 patternGmove=new move(200,300,3,-4);
+ellColor=color(200,200,0);
 	frameRate(20);
 	}
 
@@ -27,5 +29,6 @@ waterRmove.update();waterRmove.chbdd1();
 waterR.position(waterRmove.x,waterRmove.y);	
 patternGmove.update();patternGmove.chbdd1();
 patternG.position(patternGmove.x,patternGmove.y);	
+fill(ellColor);ellipse(40,40,20,50);
 
 }
