@@ -40,5 +40,5 @@ duomove.update();duomove.chbdd1();
 duo.position(duomove.x,duomove.y);	
 
 fill(ellColor);ellipse(40,40,20,50);
-
 }
+//why doesnt duo move?
