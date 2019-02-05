@@ -15,4 +15,4 @@ pongGame=select("#pongG");pongGame.class("bdd");
 lindel=select("#ld");lindel.class("bdd");
   duo=select("#dp");duo.class("bdd");
 }
-
+//puzzled why duo doesnt' work
