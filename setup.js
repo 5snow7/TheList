@@ -1,5 +1,5 @@
 let par,sn,ttt,firew,threedm;
-let waterR,patternG,pongGame,lindel;
+let waterR,patternG,pongGame,lindel,duo;
 
 function start(){
 par=createP("just click");
@@ -13,5 +13,6 @@ waterR=select("#wR");waterR.class("bdd");
 patternG=select("#pG");patternG.class("bdd");
 pongGame=select("#pongG");pongGame.class("bdd");
 lindel=select("#ld");lindel.class("bdd");
+  duo=select("#dp");duo.class("bdd");
 }
 
