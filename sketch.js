@@ -1,6 +1,6 @@
 let can,patternGmove,pongGamemove;
 let snmove,tttmove,firemove,threemove,waterRmove;
-let ellColor,lindelmove,duomove;
+let ellColor,lindelmove,duomove,mandelmove;
 function setup(){
 	start();stuff();
 	can=createCanvas(350,300);
@@ -15,6 +15,7 @@ patternGmove=new move(200,300,3,-4);
 pongGamemove=new move(50,300,-2,3);
 lindelmove=new move(200,100,5,3);
 duomove=new move(300,100,-3,2);
+mandelmove=new move(200,200,4,3);
 	ellColor=color(200,200,0);
 	frameRate(20);
 	}
@@ -38,6 +39,8 @@ lindelmove.update();lindelmove.chbdd1();
 lindel.position(lindelmove.x,lindelmove.y);	
 duomove.update();duomove.chbdd1();
 duo.position(duomove.x,duomove.y);	
+mandelmove.update();mandelmove.chbdd1();
+mandel.position(mandelmove.x,mandelmove.y);	
 
 fill(ellColor);ellipse(40,40,20,50);
 }
