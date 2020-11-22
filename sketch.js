@@ -40,7 +40,7 @@ lindel.position(lindelmove.x,lindelmove.y);
 duomove.update();duomove.chbdd1();
 duo.position(duomove.x,duomove.y);	
 mandelmove.update();mandelmove.chbdd1();
-mandel.position(mandelmove.x,mandelmove.y);	
+mandelR.position(mandelmove.x,mandelmove.y);	
 
 fill(ellColor);ellipse(40,40,20,50);
 }
