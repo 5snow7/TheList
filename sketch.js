@@ -1,6 +1,6 @@
 let can,patternGmove,pongGamemove;
 let snmove,tttmove,firemove,threemove,waterRmove;
-let ellColor,lindelmove,duomove,mandelmove;
+let ellColor,lindelmove,duomove,mandelmove,linearmove;
 function setup(){
 	start();stuff();
 	can=createCanvas(350,300);
@@ -16,6 +16,7 @@ pongGamemove=new move(50,300,-2,3);
 lindelmove=new move(200,100,5,3);
 duomove=new move(300,100,-3,2);
 mandelmove=new move(200,200,4,3);
+linearmove=new move(300,400,5,3);	
 	ellColor=color(200,200,0);
 	frameRate(20);
 	}
@@ -28,8 +29,7 @@ ttt.position(tttmove.x,tttmove.y);
 firemove.update();firemove.chbdd1();
 firew.position(firemove.x,firemove.y);	
 threemove.update();threemove.chbdd1();
-threedm.position(threemove.x,threemove.y);	
-waterRmove.update();waterRmove.chbdd1();
+threedm.position(threemove.x,threemove.y);
 waterR.position(waterRmove.x,waterRmove.y);	
 patternGmove.update();patternGmove.chbdd1();
 patternG.position(patternGmove.x,patternGmove.y);
@@ -41,6 +41,10 @@ duomove.update();duomove.chbdd1();
 duo.position(duomove.x,duomove.y);	
 mandelmove.update();mandelmove.chbdd1();
 mandelR.position(mandelmove.x,mandelmove.y);	
+mandelmove.update();mandelmove.chbdd1();
+linearmove.update();linearmove.chbdd1();
+LinearF.position(linearmove.x,linearmove.y);	
+	
 
 fill(ellColor);ellipse(40,40,20,50);
 }
