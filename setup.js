@@ -1,5 +1,5 @@
 let par,sn,ttt,firew,threedm;
-let waterR,patternG,pongGame,lindel,duo,mandelR;
+let waterR,patternG,pongGame,lindel,duo,mandelR,LinearF
 
 function start(){
 par=createP("just click");
@@ -15,5 +15,6 @@ pongGame=select("#pongG");pongGame.class("bdd");
 lindel=select("#ld");lindel.class("bdd");
   duo=select("#dp");duo.class("bdd");
   mandelR=select("#mandel");mandelR.class("bdd");
+  LinearF=select("#linearf");LinearF.class("bdd");
 }
 //puzzled why duo doesnt' work
